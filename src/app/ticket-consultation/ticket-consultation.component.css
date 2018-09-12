@@ -1,0 +1,13 @@
+#logo-form{
+  display:block;
+  width:150px;
+  height:150px;
+}
+
+.form-remision{
+  display:inline-block;
+}
+
+select{
+  display:inline-block;
+}

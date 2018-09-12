@@ -1,0 +1,45 @@
+<div class="animated fadeInLeft mt-5  mb-5 row">
+
+  <div class="col-sm-12">
+    <h1 class="text-center">Servicios</h1>
+  </div>
+
+  <div class="col-sm-12 mt-5">
+
+  <div id="accordion" class="container">
+
+
+    <ng-container *ngFor="let service of services; let i = index">
+
+      <div class="card mt-3 mt-b3">
+        <div class="card-header" id="{{'heading' + i}}">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" [attr.data-target]="'#collapse' + i" [attr.aria-expanded]="'false'" [attr.aria-controls]="'collapse' + i">
+              <i class="mdi mdi-arrow-down mdi-24px"></i>
+
+              {{service.title}}
+            </button>
+          </h5>
+        </div>
+
+
+        <div id="{{'collapse' + i}}" class="collapse" [attr.aria-labelledby]="'heading' + i" data-parent="#accordion">
+          <div class="card-body">
+
+            <ul class="list-group">
+              <li *ngFor="let req of service.requirements" class="list-group-item">{{req}}</li>
+
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+
+    </ng-container>
+
+    </div>
+  </div>
+
+
+</div>

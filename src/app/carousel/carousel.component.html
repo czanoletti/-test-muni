@@ -1,0 +1,22 @@
+<div id="{{slides.name}}" class="carousel slide" data-ride="carousel">
+
+  <ol class="carousel-indicators">
+    <li *ngFor="let slide of slides.slides; let i = index"
+      [attr.data-target]=" '#' + slides.name "
+      [attr.data-slide-to]="i"
+      [ngClass]="i == 0 ? 'active' : ''">
+    </li>
+  </ol>
+
+  <div class="carousel-inner">
+    <div *ngFor="let slide of slides.slides; let k = index"
+      [ngClass]="k == 0 ? 'carousel-item active': 'carousel-item'">
+
+      <img class="mx-auto d-block w-100" src="{{slide.src}}" alt="First slide">
+      <!-- <div class="carousel-caption d-none d-md-block">
+        <h5>{{slide.title}}</h5>
+        <p class="d-sm-none d-md-block">{{slide.description}}</p>
+      </div> -->
+
+    </div>
+  </div>

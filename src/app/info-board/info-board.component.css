@@ -1,0 +1,25 @@
+.card-img-top{
+  width:100%;
+  height:300px;
+}
+
+.redirection{
+  background-color:#f57f17;
+  border:1px solid white;
+}
+
+@media only screen and (max-width: 991px) {
+    .card-deck {
+        width: 65vw;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .card-deck {
+        width: 90vw;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}

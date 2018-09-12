@@ -1,0 +1,52 @@
+<div class="animated flipInX mt-5 card-deck">
+  <div class="row">
+
+    <div class="mt-2 mb-2 col-sm-12 col-md-12 col-lg-4">
+
+
+      <div class="card">
+        <img class="card-img-top" src="../assets/opengov.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Información Abierta</h5>
+          <p class="text-justify card-text">En Cumplimiento al Decreto 57-2008 Ley de Acceso a la Información Pública, y cumpliendo así con el derecho que tiene toda persona a tener acceso a la información que se genera en la institución municipal y que es de beneficio para los vecinos, se determinó crear la Unidad de Información Publica Municipal.</p>
+        </div>
+        <div class="card-footer">
+           <a routerLink="/informacionabierta" class="redirection btn btn-primary">¡Entérate!</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mt-2 mb-2 col-sm-12 col-md-12 col-lg-4">
+
+      <div class="card">
+        <img class="card-img-top" src="../assets/proyectos.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Proyectos</h5>
+          <p class="text-justify card-text">La municipalidad de morales se ah encargado de llevar a cabo varios proyectos para el beneficio de la población. Aquí encontraras proyectos que están en ejecución, proyectos ejecutados y los que están en planificación.</p>
+        </div>
+        <div class="card-footer">
+           <a [routerLink]="[ '../proyectos' , { outlets: { second: 'ejecutados' } }]" class="redirection btn btn-primary">¡Entérate!</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mt-2 mb-2 col-sm-12 col-md-12 col-lg-4">
+
+      <div class="card">
+        <img class="card-img-top" src="../assets/news.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Noticias</h5>
+          <p class="text-justify card-text">Entérate de los últimos sucesos de la municipalidad.</p>
+        </div>
+        <div class="card-footer">
+           <a routerLink="/noticias" class="redirection btn btn-primary">¡Entérate!</a>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>

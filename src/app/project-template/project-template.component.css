@@ -1,0 +1,12 @@
+:host ::ng-deep .carousel{
+  width:50%;
+  margin-left:auto;
+  margin-right:auto;
+
+}
+
+.imagen-stat{
+  width:400px;
+  height:250px;
+  object-fit:scale-down ;
+}

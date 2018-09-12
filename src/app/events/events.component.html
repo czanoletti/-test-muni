@@ -1,0 +1,27 @@
+<div class="mb-5 container">
+
+	<div class="row">
+
+		<div class="col-sm-12">
+			<div *ngFor="let event of events" class="row row-striped">
+				<div class="col-2 text-right">
+					<h1 class="display-4"><span class="badge badge-secondary">{{event.dayNumber}}</span></h1>
+					<h2>{{event.month}}</h2>
+					<!-- <h6 *ngIf="event.ends"><span class="badge badge-warning">Hasta - {{event.ends}}</span></h6> -->
+				</div>
+				<div class="col-10">
+					<h3 class="text-uppercase"><strong>{{event.title}}</strong></h3>
+					<ul class="list-inline">
+					    <li class="list-inline-item"><i class="mdi mdi-calendar" aria-hidden="true"></i>{{event.day}}</li>
+						<li class="list-inline-item"><i class="mdi mdi-clock-outline" aria-hidden="true"></i> {{event.timeBegin}} - {{event.timeEnd}}</li>
+						<li class="list-inline-item"><i class="mdi mdi-arrow-top-right-thick" aria-hidden="true"></i>{{event.place}}</li>
+					</ul>
+					<p>{{event.Description}}</p>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+</div>

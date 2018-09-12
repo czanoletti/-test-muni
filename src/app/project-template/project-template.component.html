@@ -1,0 +1,86 @@
+<div class="animated fadeInLeft mt-5  mb-5 row">
+
+  <div class="col-sm-12">
+    <h1 class="text-center">{{title}}</h1>
+  </div>
+
+  <div class="col-sm-12 mt-5">
+
+  <div id="accordion" class="container">
+
+
+    <ng-container *ngFor="let project of projectObject; let i = index">
+
+      <div class="card mt-3 mt-b3">
+        <div class="card-header" id="{{'heading' + i}}">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" [attr.data-target]="'#collapse' + i" [attr.aria-expanded]="'false'" [attr.aria-controls]="'collapse' + i">
+              <i class="mdi mdi-arrow-down mdi-24px"></i>
+                {{project.title}}
+
+            </button>
+          </h5>
+        </div>
+
+
+        <div id="{{'collapse' + i}}" class="collapse" [attr.aria-labelledby]="'heading' + i" data-parent="#accordion">
+          <div class="card-body">
+
+            <div id="{{'carousel' + i}}" class="mb-5 carousel slide" data-ride="carousel">
+
+              <ol class="carousel-indicators">
+                <li *ngFor="let slide of project.img; let k = index"
+                  [attr.data-target]=" '#' + 'carousel' + i "
+                  [attr.data-slide-to]="k"
+                  [ngClass]="i == 0 ? 'active' : ''">
+                </li>
+              </ol>
+
+              <div class="carousel-inner">
+                <div *ngFor="let slide of project.img; let k = index"
+                  [ngClass]="k == 0 ? 'carousel-item active': 'carousel-item'">
+
+                  <img class="imagen-stat mx-auto d-block w-100" src="{{slide.src}}" alt="First slide">
+                  <!-- <div class="carousel-caption d-none d-md-block">
+                    <h5>{{slide.title}}</h5>
+                    <p class="d-sm-none d-md-block">{{slide.description}}</p>
+                  </div> -->
+
+                </div>
+              </div>
+
+
+          </div>
+
+        <!-- Fechas  -->
+          <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-3">
+              <span class="badge badge-info">Fecha inicio: {{project.start}}</span>
+
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-3">
+              <span class="badge badge-success">Fecha Final: {{project.end}}</span>
+
+            </div>
+          </div>
+
+          <!-- Description -->
+
+          <div class="row">
+            <div class="col-sm-12">
+              {{project.description}}
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+    </ng-container>
+
+
+  </div>
+
+
+</div>

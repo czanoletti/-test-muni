@@ -1,0 +1,35 @@
+
+<div class="row">
+
+  <div class="col-sm-12">
+    <h1>Cursos</h1>
+  </div>
+
+  <div class="col-sm-12">
+
+    <div id="{{cursos}}" class="carousel slide" data-ride="carousel">
+
+      <ol class="carousel-indicators">
+        <li *ngFor="let curso of cursos; let i = index"
+          [attr.data-target]=" '#' + cursos "
+          [attr.data-slide-to]="i"
+          [ngClass]="i == 0 ? 'active' : ''">
+        </li>
+      </ol>
+
+      <div class="carousel-inner">
+        <div *ngFor="let curso of cursos; let k = index"
+          [ngClass]="k == 0 ? 'carousel-item active': 'carousel-item'">
+
+          <img class="mx-auto d-block w-100" src="{{curso.src}}" alt="First slide">
+          <!-- <div class="carousel-caption d-none d-md-block">
+            <h5>{{slide.title}}</h5>
+            <p class="d-sm-none d-md-block">{{slide.description}}</p>
+          </div> -->
+
+        </div>
+      </div>
+
+  </div>
+
+</div>

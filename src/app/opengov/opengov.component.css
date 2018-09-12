@@ -1,0 +1,11 @@
+.btn-primary{
+  background-color:#fb8c00 !important;
+  display:inline !important;
+  width:auto;
+  height: auto;
+  border-radius:5px;
+  border:1px solid white;
+  float:left;
+  position:relative;
+  clear:both;
+}
