@@ -1,13 +1,20 @@
 {
   "name": "municipalidad-morales",
   "version": "0.0.0",
+  "license":"MIT",
+  "main":"app.js",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --aot -prod"
+  },
+  "engines": {
+    "node": "~9.4.0",
+    "npm":"~6.1.0"
   },
   "private": true,
   "dependencies": {
