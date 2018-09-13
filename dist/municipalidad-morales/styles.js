@@ -655,7 +655,7 @@ if(false) {}
 
 /***/ }),
 
-/***/ 2:
+/***/ 5:
 /*!**************************************************************************************************************************************************************************!*\
   !*** multi ./src/styles.css ./node_modules/bootstrap/dist/css/bootstrap.css ./node_modules/animate.css/animate.css ./node_modules/@mdi/font/css/materialdesignicons.css ***!
   \**************************************************************************************************************************************************************************/
@@ -670,5 +670,5 @@ module.exports = __webpack_require__(/*! /Users/Rodrigo/Documents/binaryHusky/wo
 
 /***/ })
 
-},[[2,"runtime"]]]);
+},[[5,"runtime"]]]);
 //# sourceMappingURL=styles.js.map

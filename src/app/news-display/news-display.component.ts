@@ -17,13 +17,19 @@ export class NewsDisplayComponent implements OnInit {
               private newService: NewsService) { }
 
   ngOnInit() {
-    this.article = this.getArticle();
+    let articles = this.newService.getInfo();
+    this.route.params.subscribe(params => {
+
+      this.id = +params['id'];
+      this.article = articles[this.id];
+    })
+    // this.article = this.getArticle();
     // this.sub = this.route.params
   }
 
   getArticle(){
-    let articles = this.newService.getInfo();
-    return articles[this.route.params.value.id];
+
+
   }
 
 
