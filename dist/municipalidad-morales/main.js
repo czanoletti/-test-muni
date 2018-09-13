@@ -194,7 +194,7 @@ var AppRoutingModule = /** @class */ (function () {
     AppRoutingModule = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["NgModule"])({
             exports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"]],
-            imports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forRoot(routes)]
+            imports: [_angular_router__WEBPACK_IMPORTED_MODULE_1__["RouterModule"].forRoot(routes, { scrollPositionRestoration: 'enabled' })]
         })
     ], AppRoutingModule);
     return AppRoutingModule;
@@ -1365,7 +1365,7 @@ var GovServicesComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "#consejo{\n  width:90%;\n  margin-left:auto;\n  margin-right:auto;\n  display:block;\n}\n\n#pmt{\n  width:200px;\n  display:block;\n  margin-left:auto;\n  margin-right:auto;\n}\n\n#logo-carousell{\n  margin-left:auto;\n  margin-right:auto;\n  display:block;\n  position:relative;\n  margin-top:5px;\n  margin-bottom:5px;\n  width:150px;\n  height:150px;\n}\n\nh5{\n  font-family: 'Merienda One', cursive;\n}\n\nh1{\n  font-family: 'Merienda One', cursive;\n  font-size:4em;\n}\n\n@media only screen and (max-width: 850px) {\n    .font-baloo {\n        font-size:3em;\n    }\n}\n\n@media only screen and (max-width: 850px) {\n    h1 {\n        font-size:3em;\n    }\n}\n"
+module.exports = "#consejo{\n  width:90%;\n  margin-left:auto;\n  margin-right:auto;\n  display:block;\n}\n\n#pmt{\n  width:200px;\n  display:block;\n  margin-left:auto;\n  margin-right:auto;\n}\n\n#logo-carousell{\n  margin-left:auto;\n  margin-right:auto;\n  display:block;\n  position:relative;\n  margin-top:5px;\n  margin-bottom:5px;\n  width:150px;\n  height:150px;\n}\n\nh5{\n  font-family: 'Merienda One', cursive;\n}\n\nh1{\n  font-family: 'Merienda One', cursive;\n  font-size:4em;\n}\n\n@media only screen and (max-width: 850px) {\n    .font-baloo {\n        font-size:3em;\n    }\n}\n\n@media only screen and (max-width: 850px) {\n    h1 {\n        font-size:2em;\n    }\n}\n"
 
 /***/ }),
 
@@ -2185,7 +2185,6 @@ var ProjectsExecutedComponent = /** @class */ (function () {
     }
     ProjectsExecutedComponent.prototype.ngOnInit = function () {
         this.projects = this.getInfoExecuted();
-        console.log(this.projects);
     };
     ProjectsExecutedComponent.prototype.getInfoExecuted = function () {
         return this.projectService.getExecutionProjects();
