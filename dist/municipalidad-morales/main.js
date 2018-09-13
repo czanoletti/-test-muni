@@ -914,10 +914,10 @@ var EventsService = /** @class */ (function () {
                 ends: "OCT 25"
             },
             {
-                title: "Feria del Niña",
-                day: "Lunes",
+                title: "Feria del Niño",
+                day: "Martes",
                 month: "OCT",
-                dayNumber: "23",
+                dayNumber: "24",
                 timeBegin: "12:00PM",
                 timeEnd: "5:00PM",
                 place: "Cancha Polideportiva",
@@ -926,9 +926,9 @@ var EventsService = /** @class */ (function () {
             },
             {
                 title: "Feria del Niño",
-                day: "Lunes",
+                day: "Jueves",
                 month: "OCT",
-                dayNumber: "23",
+                dayNumber: "25",
                 timeBegin: "12:00PM",
                 timeEnd: "5:00PM",
                 place: "Cancha Polideportiva",
@@ -982,7 +982,7 @@ var EventsService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".row-striped:nth-of-type(odd){\n  background-color: #efefef;\n  border-left: 4px #000000 solid;\n}\n\n.row-striped:nth-of-type(even){\n  background-color: #ffffff;\n  border-left: 4px #efefef solid;\n}\n\n.row-striped {\n    padding: 15px 0;\n}\n\n@media only screen and (max-width: 767px) {\n    .container {\n        width: 95vw;\n    }\n}\n\n@media only screen and (max-width: 600px) {\n    .container {\n        width: 100vw;\n    }\n    h1 {\n        font-size:2.5em;\n    }\n}\n"
+module.exports = ".row-striped:nth-of-type(odd){\n  background-color: #efefef;\n  border-left: 4px #000000 solid;\n}\n\n.row-striped:nth-of-type(even){\n  background-color: #ffffff;\n  border-left: 4px #efefef solid;\n}\n\n.row-striped {\n    padding: 15px 0;\n}\n\n@media only screen and (max-width: 767px) {\n    .container {\n        width: 90%;\n    }\n}\n\n@media only screen and (max-width: 600px) {\n    .container {\n        width: 98%;\n    }\n    h1 {\n        font-size:2.5em;\n    }\n}\n"
 
 /***/ }),
 
@@ -1365,7 +1365,7 @@ var GovServicesComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "#consejo{\n  width:90%;\n  margin-left:auto;\n  margin-right:auto;\n  display:block;\n}\n\n#pmt{\n  width:200px;\n  display:block;\n  margin-left:auto;\n  margin-right:auto;\n}\n\n#logo-carousell{\n  margin-left:auto;\n  margin-right:auto;\n  display:block;\n  position:relative;\n  margin-top:5px;\n  margin-bottom:5px;\n  width:150px;\n  height:150px;\n}\n\nh5{\n  font-family: 'Merienda One', cursive;\n}\n\nh1{\n  font-family: 'Merienda One', cursive;\n  font-size:4em;\n}\n\n@media only screen and (max-width: 850px) {\n    .font-baloo {\n        font-size:3em;\n    }\n}\n\n@media only screen and (max-width: 850px) {\n    h1 {\n        font-size:2em;\n    }\n}\n"
+module.exports = "#consejo{\n  width:90%;\n  margin-left:auto;\n  margin-right:auto;\n  display:block;\n}\n\n#pmt{\n  width:200px;\n  display:block;\n  margin-left:auto;\n  margin-right:auto;\n}\n\n#logo-carousell{\n  margin-left:auto;\n  margin-right:auto;\n  display:block;\n  position:relative;\n  margin-top:5px;\n  margin-bottom:5px;\n  width:150px;\n  height:150px;\n}\n\nh5{\n  font-family: 'Merienda One', cursive;\n}\n\nh1{\n  font-family: 'Merienda One', cursive;\n  font-size:4em;\n}\n\n@media only screen and (max-width: 850px) {\n    .font-baloo {\n        font-size:3em;\n    }\n}\n\n@media only screen and (max-width: 850px) {\n    h1 {\n        font-size:2em !important;\n    }\n}\n"
 
 /***/ }),
 
