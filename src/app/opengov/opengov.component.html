@@ -13,9 +13,10 @@
 
       <div class="card mt-3 mt-b3">
         <div class="card-header" id="{{'heading' + i}}">
-          <h5 class="mb-0">
+          <h5 class="title mb-0">
+            {{doc.name}}
             <button class="btn btn-link" data-toggle="collapse" [attr.data-target]="'#collapse' + i" aria-expanded="false" [attr.aria-controls]="'collapse' + i">
-              <i class="mdi mdi-arrow-down mdi-24px"></i> {{doc.name}}
+              <i class="mdi mdi-arrow-down mdi-24px"></i>
             </button>
           </h5>
         </div>

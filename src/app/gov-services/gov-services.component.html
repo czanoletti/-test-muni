@@ -13,11 +13,10 @@
 
       <div #refEl class="card mt-3 mt-b3">
         <div class="card-header" id="{{'heading' + i}}">
-          <h5 class="res-text mb-0">
+          <h5 class="title res-text mb-0">
+            {{service.title}}
             <button #title class="btn btn-link" data-toggle="collapse" [attr.data-target]="'#collapse' + i" [attr.aria-expanded]="'false'" [attr.aria-controls]="'collapse' + i">
               <i class="mdi mdi-arrow-down mdi-24px"></i>
-
-              {{service.title}}
             </button>
           </h5>
           <i (click)="printPDF(refEl, title, content)" class="print mdi mdi-printer mdi-24px"></i>

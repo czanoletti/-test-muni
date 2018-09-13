@@ -982,7 +982,7 @@ var EventsService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".row-striped:nth-of-type(odd){\n  background-color: #efefef;\n  border-left: 4px #000000 solid;\n}\n\n.row-striped:nth-of-type(even){\n  background-color: #ffffff;\n  border-left: 4px #efefef solid;\n}\n\n.row-striped {\n    padding: 15px 0;\n}\n\n@media only screen and (max-width: 767px) {\n    .container {\n        width: 90%;\n    }\n}\n\n@media only screen and (max-width: 600px) {\n    .container {\n        width: 98%;\n    }\n    h1 {\n        font-size:2.5em;\n    }\n}\n"
+module.exports = ".row-striped:nth-of-type(odd){\n  background-color: #efefef;\n  border-left: 4px #000000 solid;\n}\n\n.row-striped:nth-of-type(even){\n  background-color: #ffffff;\n  border-left: 4px #efefef solid;\n}\n\n.row-striped {\n    padding: 15px 0;\n}\n\n@media only screen and (max-width: 767px) {\n    .container {\n        width: 90%;\n    }\n}\n\n@media only screen and (max-width: 600px) {\n    .container {\n        width: 98%;\n    }\n    h1 {\n        font-size:2.1em !important;\n    }\n    h2{\n      font-size:1.5em !important\n    }\n}\n"
 
 /***/ }),
 
@@ -1259,6 +1259,66 @@ var GovServicesService = /** @class */ (function () {
                     "Observaciones: El Concejo Municipal decide la cuota de ingreso a pagar según el tipo de empresa, lugar, tamaño y fines."
                 ]
             },
+            {
+                title: "REQUISITOS PARA INSCRIBIR UN CONSEJO COMUNITRARIO DE DESARROLLO (COCODE) COMITES DE AGUA POTABLE, CONSEJOS EDUCATIVOS, CONSEJOS DE PADRES DE FAMILIA, JUNTAS ESCOLARES Y ASOCIACIONES COMUNITARIAS",
+                requirements: [
+                    "COCODES:",
+                    "Acta de formación del Consejo Comunitario de Desarrollo COCODE",
+                    "Fotocopia de DPI del órgano de Coordinación del COCODE ",
+                    "2 fotografías recientes del órgano de Coordinación",
+                    "Libro de actas",
+                    "Traer Sello del Consejo Comunitario De Desarrollo en Buen Estado.",
+                    "COMITES DE AGUA POTABLE:",
+                    "Solicitud de Inscripción.",
+                    "Acta de formación del Comité.",
+                    "Fotocopia de DPI de la Junta Directiva",
+                    "Fotocopia de Escritura Pública",
+                    "Fotocopia de Acta Notarial reciente",
+                    "Período: 1 sola vez",
+                    "CONSEJOS EDUCATIVOS, CONSEJOS DE PADRES DE FAMILIA, Y JUNTAS ESCOLARES:",
+                    "Fotocopia de la Certificación del Acta de Elección De Nueva Directiva de la Organización.",
+                    "Fotocopia del Acta de Nombramiento de Representante Legal de la Organización.",
+                    "Fotocopias de DPI de la Directiva.",
+                    "ASOCIACIONES COMUNITARIAS:",
+                    "Fotocopia de Escritura Pública.",
+                    "Fotocopia de Acta Notarial.",
+                    "Fotocopias de los miembros de la Asociación."
+                ]
+            },
+            {
+                title: "REQUISITOS SOLICITUD SERVICIO DE AGUA",
+                requirements: [
+                    "PERSONA QUE SOLICITA: Todos los vecinos que soliciten 1/2 paja de agua (Concesión del Servicio del Agua) a la Municipalidad.",
+                    "Deberá presentar la siguiente papelería en el Departamento del Agua Potable anexo a Receptoría.-",
+                    "Documento Personal de Identificación DPI.-",
+                    "Fotocopia de documentos que acrediten la legitima propiedad del Bien Inmueble",
+                    "Testimonio de la escritura Pública o Declaración Jurada de Derechos de Posesión",
+                    "Presentar Recibo de Pago del IUSI-",
+                    "Si aún no lo ha pagado deberá presentarse al Departamento del Impuesto Sobre Inmuebles a tramitar el respectivo pago).",
+                    "Presentar Recibo de pago de Licencia de Construcción",
+                    "Si aún no lo ha gestionado deberá presentar al Departamento de Licencias de Construcción anexo a la Policía Municipal de Transito, frente al Polideportivo Barrio La Cancha.",
+                    "Deberá comprar Medidor del agua Marca Arad, con estructura de metal y lente de vidrio."
+                ]
+            },
+            {
+                title: "COSTO POR MEDIA PAJA DE AGUA",
+                requirements: [
+                    "Venta a precio de contado Q.1,420.00",
+                    "VVenta a precio de Crédito Q.1,520.00 Convenio de Pago en la Oficina de Servicios Públicos",
+                    "Primera Cuota Q.520.00",
+                    "Segunda Cuota Q.500.00",
+                    "Tercera Cuota Q.500.00"
+                ]
+            },
+            {
+                title: "PAGO CONSUMO DE AGUA",
+                requirements: [
+                    "TASAS:",
+                    "Q. 25.00-Período Mensual",
+                    "Lo considerado a 30,000 litros equivalente a 30 metros cúbicos al mes.",
+                    "OBSERVACIONES:   Por el exceso de consumo del agua se pagará Q0.50 por mil Litros."
+                ]
+            },
         ];
     }
     GovServicesService.prototype.getInfo = function () {
@@ -1284,7 +1344,7 @@ var GovServicesService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".print{\n\n}\n.print:hover{\n  border:1px solid black;\n}\n.res-text {\n  font-size: 5vw !important;\n}\n/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */\n@media screen and (max-width: 760px) {\n  .btn {\n    font-size: 2vw;\n  }\n}\n"
+module.exports = ".print{\n\n}\n.print:hover{\n  border:1px solid black;\n}\n.res-text {\n  font-size: 5vw !important;\n}\n/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */\n@media screen and (max-width: 760px) {\n  .btn {\n    font-size: 2vw;\n  }\n}\n.title{\n  font-size:1.2em !important;\n}\n"
 
 /***/ }),
 
@@ -1295,7 +1355,7 @@ module.exports = ".print{\n\n}\n.print:hover{\n  border:1px solid black;\n}\n.re
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"animated fadeInLeft mt-5  mb-5 row\">\n\n  <div class=\"col-sm-12\">\n    <h1 class=\"text-center\">Servicios</h1>\n  </div>\n\n  <div class=\"col-sm-12 mt-5\">\n\n  <div id=\"accordion\" class=\"container\">\n\n\n    <ng-container *ngFor=\"let service of services; let i = index\">\n\n      <div #refEl class=\"card mt-3 mt-b3\">\n        <div class=\"card-header\" id=\"{{'heading' + i}}\">\n          <h5 class=\"res-text mb-0\">\n            <button #title class=\"btn btn-link\" data-toggle=\"collapse\" [attr.data-target]=\"'#collapse' + i\" [attr.aria-expanded]=\"'false'\" [attr.aria-controls]=\"'collapse' + i\">\n              <i class=\"mdi mdi-arrow-down mdi-24px\"></i>\n\n              {{service.title}}\n            </button>\n          </h5>\n          <i (click)=\"printPDF(refEl, title, content)\" class=\"print mdi mdi-printer mdi-24px\"></i>\n        </div>\n\n\n        <div id=\"{{'collapse' + i}}\" class=\"collapse\" [attr.aria-labelledby]=\"'heading' + i\" data-parent=\"#accordion\">\n          <div id=\"{{'snapshot' + i}}\" class=\"card-body\">\n\n            <ul #content class=\"list-group\">\n              <li  *ngFor=\"let req of service.requirements\" class=\"list-group-item\">{{req}}</li>\n\n            </ul>\n\n          </div>\n        </div>\n\n      </div>\n\n    </ng-container>\n\n    </div>\n  </div>\n\n\n</div>\n"
+module.exports = "<div class=\"animated fadeInLeft mt-5  mb-5 row\">\n\n  <div class=\"col-sm-12\">\n    <h1 class=\"text-center\">Servicios</h1>\n  </div>\n\n  <div class=\"col-sm-12 mt-5\">\n\n  <div id=\"accordion\" class=\"container\">\n\n\n    <ng-container *ngFor=\"let service of services; let i = index\">\n\n      <div #refEl class=\"card mt-3 mt-b3\">\n        <div class=\"card-header\" id=\"{{'heading' + i}}\">\n          <h5 class=\"title res-text mb-0\">\n            {{service.title}}\n            <button #title class=\"btn btn-link\" data-toggle=\"collapse\" [attr.data-target]=\"'#collapse' + i\" [attr.aria-expanded]=\"'false'\" [attr.aria-controls]=\"'collapse' + i\">\n              <i class=\"mdi mdi-arrow-down mdi-24px\"></i>\n            </button>\n          </h5>\n          <i (click)=\"printPDF(refEl, title, content)\" class=\"print mdi mdi-printer mdi-24px\"></i>\n        </div>\n\n\n        <div id=\"{{'collapse' + i}}\" class=\"collapse\" [attr.aria-labelledby]=\"'heading' + i\" data-parent=\"#accordion\">\n          <div id=\"{{'snapshot' + i}}\" class=\"card-body\">\n\n            <ul #content class=\"list-group\">\n              <li  *ngFor=\"let req of service.requirements\" class=\"list-group-item\">{{req}}</li>\n\n            </ul>\n\n          </div>\n        </div>\n\n      </div>\n\n    </ng-container>\n\n    </div>\n  </div>\n\n\n</div>\n"
 
 /***/ }),
 
@@ -1930,7 +1990,7 @@ var OpengovService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".btn-primary{\n  background-color:#fb8c00 !important;\n  display:inline !important;\n  width:auto;\n  height: auto;\n  border-radius:5px;\n  border:1px solid white;\n  float:left;\n  position:relative;\n  clear:both;\n}\n\n/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */\n\n@media screen and (max-width: 760px) {\n  .btn {\n    font-size: 0.7em;\n  }\n}\n"
+module.exports = ".btn-primary{\n  background-color:#fb8c00 !important;\n  display:inline !important;\n  width:auto;\n  height: auto;\n  border-radius:5px;\n  border:1px solid white;\n  float:left;\n  position:relative;\n  clear:both;\n}\n\n/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */\n\n@media screen and (max-width: 760px) {\n  .btn {\n    font-size: 0.7em;\n  }\n}\n\n.title{\n  font-size: 1.2em;\n}\n"
 
 /***/ }),
 
@@ -1941,7 +2001,7 @@ module.exports = ".btn-primary{\n  background-color:#fb8c00 !important;\n  displ
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"animated fadeInLeft mt-5  mb-5 row\">\n\n\n  <div class=\"col-sm-12\">\n    <h1 class=\"text-center\">Información abierta</h1>\n  </div>\n\n  <div class=\"col-sm-12 mt-5\">\n\n  <div id=\"accordion\" class=\"container\">\n\n    <ng-container *ngFor=\"let doc of info; let i = index\">\n\n      <div class=\"card mt-3 mt-b3\">\n        <div class=\"card-header\" id=\"{{'heading' + i}}\">\n          <h5 class=\"mb-0\">\n            <button class=\"btn btn-link\" data-toggle=\"collapse\" [attr.data-target]=\"'#collapse' + i\" aria-expanded=\"false\" [attr.aria-controls]=\"'collapse' + i\">\n              <i class=\"mdi mdi-arrow-down mdi-24px\"></i> {{doc.name}}\n            </button>\n          </h5>\n        </div>\n\n        <div id=\"{{'collapse' + i}}\" class=\"collapse\" [attr.aria-labelledby]=\"'heading' + i\" data-parent=\"#accordion\">\n          <div class=\"card-body\">\n            <a *ngFor=\"let btn of doc.documents\" class=\"mt-2 mb-2 btn btn-primary\" href=\"{{btn.location}}\" role=\"button\">{{btn.name}}</a>\n          </div>\n        </div>\n\n      </div>\n\n    </ng-container>\n\n    </div>\n  </div>\n\n\n</div>\n"
+module.exports = "<div class=\"animated fadeInLeft mt-5  mb-5 row\">\n\n\n  <div class=\"col-sm-12\">\n    <h1 class=\"text-center\">Información abierta</h1>\n  </div>\n\n  <div class=\"col-sm-12 mt-5\">\n\n  <div id=\"accordion\" class=\"container\">\n\n    <ng-container *ngFor=\"let doc of info; let i = index\">\n\n      <div class=\"card mt-3 mt-b3\">\n        <div class=\"card-header\" id=\"{{'heading' + i}}\">\n          <h5 class=\"title mb-0\">\n            {{doc.name}}\n            <button class=\"btn btn-link\" data-toggle=\"collapse\" [attr.data-target]=\"'#collapse' + i\" aria-expanded=\"false\" [attr.aria-controls]=\"'collapse' + i\">\n              <i class=\"mdi mdi-arrow-down mdi-24px\"></i>\n            </button>\n          </h5>\n        </div>\n\n        <div id=\"{{'collapse' + i}}\" class=\"collapse\" [attr.aria-labelledby]=\"'heading' + i\" data-parent=\"#accordion\">\n          <div class=\"card-body\">\n            <a *ngFor=\"let btn of doc.documents\" class=\"mt-2 mb-2 btn btn-primary\" href=\"{{btn.location}}\" role=\"button\">{{btn.name}}</a>\n          </div>\n        </div>\n\n      </div>\n\n    </ng-container>\n\n    </div>\n  </div>\n\n\n</div>\n"
 
 /***/ }),
 
@@ -2000,7 +2060,7 @@ var OpengovComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ":host ::ng-deep .carousel{\n  width:50%;\n  margin-left:auto;\n  margin-right:auto;\n\n}\n\n.carousel{\n  width:100%\n}\n\n.imagen-stat{\n  width:100%;\n  height:600px;\n  -o-object-fit:scale-down ;\n     object-fit:scale-down ;\n}\n\n/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */\n\n@media screen and (max-width: 760px) {\n  .btn {\n    font-size: 3.5vw;\n  }\n}\n"
+module.exports = ":host ::ng-deep .carousel{\n  width:50%;\n  margin-left:auto;\n  margin-right:auto;\n\n}\n\n.carousel{\n  width:100%\n}\n\n.imagen-stat{\n  width:100%;\n  height:600px;\n  -o-object-fit:scale-down ;\n     object-fit:scale-down ;\n}\n\n/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */\n\n@media screen and (max-width: 770px) {\n  .imagen-stat {\n    height:300px;\n  }\n}\n\n@media screen and (max-width: 760px) {\n  .btn {\n    font-size: 3.5vw;\n  }\n}\n\nh5{\n  font-size:1.2em;\n}\n\n.paragraph{\n  font-size:1.1em !important;\n}\n"
 
 /***/ }),
 
@@ -2011,7 +2071,7 @@ module.exports = ":host ::ng-deep .carousel{\n  width:50%;\n  margin-left:auto;\
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"animated fadeInLeft mt-5  mb-5 row\">\n\n  <div class=\"col-sm-12\">\n    <h1 class=\"text-center\">{{title}}</h1>\n  </div>\n\n  <div class=\"col-sm-12 mt-5\">\n\n  <div id=\"accordion\" class=\"container\">\n\n\n    <ng-container *ngFor=\"let project of projectObject; let i = index\">\n\n      <div class=\"card mt-3 mt-b3\">\n        <div class=\"card-header\" id=\"{{'heading' + i}}\">\n          <h5 class=\"mb-0\">\n            <button class=\"btn btn-link\" data-toggle=\"collapse\" [attr.data-target]=\"'#collapse' + i\" [attr.aria-expanded]=\"'false'\" [attr.aria-controls]=\"'collapse' + i\">\n              <i class=\"mdi mdi-arrow-down mdi-24px\"></i>\n                {{project.title}}\n\n            </button>\n          </h5>\n        </div>\n\n\n        <div id=\"{{'collapse' + i}}\" class=\"collapse\" [attr.aria-labelledby]=\"'heading' + i\" data-parent=\"#accordion\">\n          <div class=\"card-body\">\n\n            <div id=\"{{'carousel' + i}}\" class=\"mb-5 carousel slide\" data-ride=\"carousel\">\n\n              <ol class=\"carousel-indicators\">\n                <li *ngFor=\"let slide of project.img; let k = index\"\n                  [attr.data-target]=\" '#' + 'carousel' + i \"\n                  [attr.data-slide-to]=\"k\"\n                  [ngClass]=\"i == 0 ? 'active' : ''\">\n                </li>\n              </ol>\n\n              <div class=\"carousel-inner\">\n                <div *ngFor=\"let slide of project.img; let k = index\"\n                  [ngClass]=\"k == 0 ? 'carousel-item active': 'carousel-item'\">\n\n                  <img class=\"imagen-stat mx-auto d-block w-100\" src=\"{{slide.src}}\" alt=\"First slide\">\n                  <!-- <div class=\"carousel-caption d-none d-md-block\">\n                    <h5>{{slide.title}}</h5>\n                    <p class=\"d-sm-none d-md-block\">{{slide.description}}</p>\n                  </div> -->\n\n                </div>\n              </div>\n\n\n          </div>\n\n        <!-- Fechas  -->\n          <div class=\"row\">\n            <div class=\"col-sm-12 col-md-4 col-lg-3\">\n              <span class=\"badge badge-info\">Fecha inicio: {{project.start}}</span>\n\n            </div>\n            <div class=\"col-sm-12 col-md-4 col-lg-3\">\n              <span class=\"badge badge-success\">Fecha Final: {{project.end}}</span>\n\n            </div>\n          </div>\n\n          <!-- Description -->\n\n          <div class=\"row\">\n            <div class=\"col-sm-12\">\n              {{project.description}}\n            </div>\n          </div>\n\n\n        </div>\n\n      </div>\n    </div>\n    </ng-container>\n\n\n  </div>\n\n\n</div>\n"
+module.exports = "<div class=\"animated fadeInLeft mt-5  mb-5 row\">\n\n  <div class=\"col-sm-12\">\n    <h1 class=\"text-center\">{{title}}</h1>\n  </div>\n\n  <div class=\"col-sm-12 mt-5\">\n\n  <div id=\"accordion\" class=\"container\">\n\n\n    <ng-container *ngFor=\"let project of projectObject; let i = index\">\n\n      <div class=\"card mt-3 mt-b3\">\n        <div class=\"card-header\" id=\"{{'heading' + i}}\">\n          <h5 class=\"mb-0\">\n            {{project.title}}\n            <button class=\"btn btn-link\" data-toggle=\"collapse\" [attr.data-target]=\"'#collapse' + i\" [attr.aria-expanded]=\"'false'\" [attr.aria-controls]=\"'collapse' + i\">\n              <i class=\"mdi mdi-arrow-down mdi-24px\"></i>\n\n\n            </button>\n          </h5>\n        </div>\n\n\n        <div id=\"{{'collapse' + i}}\" class=\"collapse\" [attr.aria-labelledby]=\"'heading' + i\" data-parent=\"#accordion\">\n          <div class=\"card-body\">\n\n            <div id=\"{{'carousel' + i}}\" class=\"mb-5 carousel slide\" data-ride=\"carousel\">\n\n              <ol class=\"carousel-indicators\">\n                <li *ngFor=\"let slide of project.img; let k = index\"\n                  [attr.data-target]=\" '#' + 'carousel' + i \"\n                  [attr.data-slide-to]=\"k\"\n                  [ngClass]=\"i == 0 ? 'active' : ''\">\n                </li>\n              </ol>\n\n              <div class=\"carousel-inner\">\n                <div *ngFor=\"let slide of project.img; let k = index\"\n                  [ngClass]=\"k == 0 ? 'carousel-item active': 'carousel-item'\">\n\n                  <img class=\"imagen-stat mx-auto d-block w-100\" src=\"{{slide.src}}\" alt=\"First slide\">\n                  <!-- <div class=\"carousel-caption d-none d-md-block\">\n                    <h5>{{slide.title}}</h5>\n                    <p class=\"d-sm-none d-md-block\">{{slide.description}}</p>\n                  </div> -->\n\n                </div>\n              </div>\n\n\n          </div>\n\n        <!-- Fechas  -->\n          <div class=\"row\">\n            <div class=\"col-sm-12 col-md-4 col-lg-3\">\n              <span class=\"badge badge-info\">Fecha inicio: {{project.start}}</span>\n\n            </div>\n            <div class=\"col-sm-12 col-md-4 col-lg-3\">\n              <span class=\"badge badge-success\">Fecha Final: {{project.end}}</span>\n\n            </div>\n          </div>\n\n          <!-- Description -->\n\n          <div class=\"row\">\n            <div class=\"paragraph col-sm-12\">\n              <p class=\"paragraph\">{{project.description}}</p>\n            </div>\n          </div>\n\n\n        </div>\n\n      </div>\n    </div>\n    </ng-container>\n\n\n  </div>\n\n\n</div>\n"
 
 /***/ }),
 
