@@ -17,6 +17,7 @@ export class GovServicesComponent implements OnInit {
 
   ngOnInit() {
     this.services = this.getServicesInfo();
+    window.scrollTo(0, 0);
   }
 
   getServicesInfo(){

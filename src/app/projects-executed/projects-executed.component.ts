@@ -7,7 +7,7 @@ import { ProjectsService } from '../projects.service';
   styleUrls: ['./projects-executed.component.css']
 })
 export class ProjectsExecutedComponent implements OnInit {
-  
+
   projects:any;
 
   constructor(private projectService: ProjectsService) { }
@@ -15,6 +15,7 @@ export class ProjectsExecutedComponent implements OnInit {
   ngOnInit() {
     this.projects = this.getInfoExecuted();
     console.log(this.projects);
+    window.scrollTo(0, 0);
   }
 
   getInfoExecuted(){

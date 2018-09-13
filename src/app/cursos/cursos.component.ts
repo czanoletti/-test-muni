@@ -12,6 +12,7 @@ export class CursosComponent implements OnInit {
 
   ngOnInit() {
     this.cursos = this.getCursos();
+    window.scrollTo(0, 0);
   }
 
   getCursos(){

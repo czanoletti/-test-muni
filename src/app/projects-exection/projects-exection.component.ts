@@ -12,11 +12,12 @@ export class ProjectsExectionComponent implements OnInit {
 
   ngOnInit() {
 
-    this.projectsExecution = this.getInfoExecution()
+    this.projectsExecution = this.getInfoExecution();
+    window.scrollTo(0, 0);
   }
 
   getInfoExecution(){
-    return this.projectService.getExecutingProjects()
+    return this.projectService.getExecutingProjects();
   }
 
 }
