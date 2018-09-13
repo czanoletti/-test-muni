@@ -1,0 +1,16 @@
+.print{
+
+}
+.print:hover{
+  border:1px solid black;
+}
+
+.res-text {
+  font-size: 5vw !important;
+}
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 760px) {
+  .btn {
+    font-size: 2vw;
+  }
+}

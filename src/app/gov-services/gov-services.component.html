@@ -11,23 +11,24 @@
 
     <ng-container *ngFor="let service of services; let i = index">
 
-      <div class="card mt-3 mt-b3">
+      <div #refEl class="card mt-3 mt-b3">
         <div class="card-header" id="{{'heading' + i}}">
-          <h5 class="mb-0">
-            <button class="btn btn-link" data-toggle="collapse" [attr.data-target]="'#collapse' + i" [attr.aria-expanded]="'false'" [attr.aria-controls]="'collapse' + i">
+          <h5 class="res-text mb-0">
+            <button #title class="btn btn-link" data-toggle="collapse" [attr.data-target]="'#collapse' + i" [attr.aria-expanded]="'false'" [attr.aria-controls]="'collapse' + i">
               <i class="mdi mdi-arrow-down mdi-24px"></i>
 
               {{service.title}}
             </button>
           </h5>
+          <i (click)="printPDF(refEl, title, content)" class="print mdi mdi-printer mdi-24px"></i>
         </div>
 
 
         <div id="{{'collapse' + i}}" class="collapse" [attr.aria-labelledby]="'heading' + i" data-parent="#accordion">
-          <div class="card-body">
+          <div id="{{'snapshot' + i}}" class="card-body">
 
-            <ul class="list-group">
-              <li *ngFor="let req of service.requirements" class="list-group-item">{{req}}</li>
+            <ul #content class="list-group">
+              <li  *ngFor="let req of service.requirements" class="list-group-item">{{req}}</li>
 
             </ul>
 

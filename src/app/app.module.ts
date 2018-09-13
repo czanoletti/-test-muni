@@ -1,6 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, ApplicationRef } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { FormsModule }   from '@angular/forms';
+
+// PDF
+import { PdfViewerModule } from 'ng2-pdf-viewer';
+
+// Maps
+import { AgmCoreModule } from '@agm/core';
 
 // Routing
 import { AppRoutingModule } from './app-routing.module';
@@ -30,6 +37,8 @@ import { VumeComponent } from './vume/vume.component';
 import { BalastadosComponent } from './balastados/balastados.component';
 import { EventsComponent } from './events/events.component';
 import { YoutubeComponent } from './youtube/youtube.component';
+import { GmapsComponent } from './gmaps/gmaps.component';
+import { NewsDisplayComponent } from './news-display/news-display.component';
 
 @NgModule({
   declarations: [
@@ -56,12 +65,19 @@ import { YoutubeComponent } from './youtube/youtube.component';
     VumeComponent,
     BalastadosComponent,
     EventsComponent,
-    YoutubeComponent
+    YoutubeComponent,
+    GmapsComponent,
+    NewsDisplayComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    CommonModule,
+    PdfViewerModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyAAFOFBm0Aybb2di44tP3XWdrJptueQYFs'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GovServicesService } from '../gov-services.service';
+import * as jspdf from 'jspdf';
 
 @Component({
   selector: 'app-gov-services',
@@ -7,6 +8,8 @@ import { GovServicesService } from '../gov-services.service';
   styleUrls: ['./gov-services.component.css']
 })
 export class GovServicesComponent implements OnInit {
+
+
 
   services:any;
 
@@ -20,6 +23,15 @@ export class GovServicesComponent implements OnInit {
     return this.govService.getInfo();
   }
 
+  printPDF(element, title, content){
+    console.log('printing...');
+    console.log(element);
+    console.log(title);
+    console.log(content.innerHTML);
 
+    let doc = new jspdf();
+    doc.text()
+
+  }
 
 }

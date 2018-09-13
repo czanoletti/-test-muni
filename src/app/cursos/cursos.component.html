@@ -1,35 +1,29 @@
+<div class="animated fadeInLeft">
+<!-- Need to be fix it breaks at flex-column -->
+<h1 class="text-center">Cursos Disponibles</h1>
 
-<div class="row">
+<div class="mx-auto container mb-5 mt-5">
 
-  <div class="col-sm-12">
-    <h1>Cursos</h1>
-  </div>
+        <div class="pricing card-deck flex-column flex-md-row mb-3">
 
-  <div class="col-sm-12">
 
-    <div id="{{cursos}}" class="carousel slide" data-ride="carousel">
 
-      <ol class="carousel-indicators">
-        <li *ngFor="let curso of cursos; let i = index"
-          [attr.data-target]=" '#' + cursos "
-          [attr.data-slide-to]="i"
-          [ngClass]="i == 0 ? 'active' : ''">
-        </li>
-      </ol>
+            <div *ngFor="let curso of cursos" class="card card-pricing text-center px-3 mb-4">
+                <span class="h6 w-60 mx-auto px-4 py-1 rounded-bottom bg-primary text-white shadow-sm">{{curso.title}}</span>
+                <div class="bg-transparent card-header pt-4 border-0">
+                    <!-- <h1 class="h1 font-weight-normal text-primary text-center mb-0" data-pricing-value="15">Q<span class="price">{{curso.precio}}</span><span class="h6 text-muted ml-2">/ {{curso.frequencia}}</span></h1> -->
+                </div>
+                <div class="card-body pt-0">
+                    <ul class="list-unstyled mb-4">
+                        <li *ngFor="let description of curso.discriptions">{{description}}</li>
+                    </ul>
+                    <span class="badge badge-info">{{curso.fecha}}</span>
+                </div>
+            </div>
 
-      <div class="carousel-inner">
-        <div *ngFor="let curso of cursos; let k = index"
-          [ngClass]="k == 0 ? 'carousel-item active': 'carousel-item'">
 
-          <img class="mx-auto d-block w-100" src="{{curso.src}}" alt="First slide">
-          <!-- <div class="carousel-caption d-none d-md-block">
-            <h5>{{slide.title}}</h5>
-            <p class="d-sm-none d-md-block">{{slide.description}}</p>
-          </div> -->
 
-        </div>
-      </div>
 
-  </div>
-
+    </div>
+</div>
 </div>

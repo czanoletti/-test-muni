@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { VumeService } from '../vume.service';
 @Component({
   selector: 'app-vume',
   templateUrl: './vume.component.html',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VumeComponent implements OnInit {
 
-  constructor() { }
+  jobs:any;
+  constructor(private vumeService:VumeService ) { }
 
   ngOnInit() {
+    this.jobs = this.getJobs();
+  }
+
+  getJobs(){
+    return this.vumeService.getInfoJobs();
   }
 
 }

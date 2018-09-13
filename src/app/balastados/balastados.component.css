@@ -1,0 +1,9 @@
+.imagen-stat{
+  width:400px;
+  height:400px;
+  object-fit:scale-down ;
+}
+
+#carouselExampleIndicators{
+  width:100%;
+}

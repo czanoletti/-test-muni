@@ -5,8 +5,19 @@
 
 }
 
+.carousel{
+  width:100%
+}
+
 .imagen-stat{
-  width:400px;
-  height:250px;
+  width:100%;
+  height:600px;
   object-fit:scale-down ;
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 760px) {
+  .btn {
+    font-size: 3.5vw;
+  }
 }

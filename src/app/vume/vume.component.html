@@ -1,8 +1,59 @@
 
-<div class="row">
+<div class="animated fadeInLeft container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="text-center">Ventanilla Única Municipal de Empleo</h1>
+            <h4 class="text-center">Ofertas de trabajo</h4>
+        </div>
+    </div>
+	<div class="row">
+	    <div *ngFor="let job of jobs" class="col-md-12">
+	        <div class="row mb-2">
+	            <div class="col-md-12">
+	                <div class="card">
+	                    <div class="card-body">
+	                        <div class="row">
+                              <div class="col-md-3">
+	                                <img src="../assets/mock-job-1.jpg">
+	                            </div>
+	                            <div class="col-md-9">
+	                                <div class="card-body">
+	                                    <div class="news-content">
+	                                        <a href="#"><h2>{{job.title}}  </h2></a>
+	                                        <p class="text-justify">{{job.description}}</p>
 
-  <div class="col-sm-12">
-    <h1>VUME</h1>
-  </div>
+	                                    </div>
+	                                    <div class="news-footer">
+	                                    <div class="news-author">
+	                                        <ul class="list-inline list-unstyled">
+	                                            <li class="list-inline-item text-secondary">
+	                                                <i class="mdi mdi-account-heart"></i>
+	                                                {{job.empresa}}
+	                                            </li>
 
+	                                        </ul>
+
+                                            <form>
+                                              <div class="form-group">
+                                                <label class="btn-bs-file btn  btn-primary">
+                                                    Subir curriculum
+                                                    <input type="file" />
+                                                </label>
+                                              </div>
+                                            </form>
+
+                                           </div>
+	                                    </div>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+
+
+	    </div>
+
+	</div>
 </div>

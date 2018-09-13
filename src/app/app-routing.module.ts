@@ -17,6 +17,7 @@ import { RouterModule, Routes } from '@angular/router';
  import { VumeComponent } from './vume/vume.component';
  import { BalastadosComponent } from './balastados/balastados.component';
  import { CursosComponent} from './cursos/cursos.component';
+ import { NewsDisplayComponent } from './news-display/news-display.component';
 
 
 const routes: Routes = [
@@ -43,6 +44,9 @@ const routes: Routes = [
   },
   {
     path:'noticias', component: NewsComponent
+  },
+  {
+    path:'noticias/:id', component: NewsDisplayComponent
   },
   {
     path:'informacionabierta', component: OpengovComponent

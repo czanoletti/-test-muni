@@ -1,11 +1,11 @@
 
 
-<div class="mt-5 mb-5 container">
+<div class="animated fadeInLeft mt-5 mb-5 container">
     <div  class="row">
 
         <div class="col-md-6 jasgrid">
 
-        <ng-container *ngFor="let n of news; let e=even" >
+        <ng-container *ngFor="let n of news; let e=even; let i = index" >
 
             <div *ngIf="e" class="box-item">
                 <div class="box-post">
@@ -13,7 +13,7 @@
                         <a href="#" rel="tag">{{n.depto}}</a>
                     </span>
                     <h1 class="post-title">
-                        <a href="#">
+                        <a class="res-txt" [routerLink]="['/noticias', i]">
                             {{n.title}}
                         </a>
                     </h1>
@@ -32,7 +32,7 @@
 
         <div class="col-md-6 jasgrid">
 
-          <ng-container *ngFor="let n of news; let o=odd" >
+          <ng-container *ngFor="let n of news; let o=odd; let i = index" >
 
             <div *ngIf="o" class="box-item">
                 <div class="box-post">
@@ -40,7 +40,7 @@
                         <a href="#" rel="tag">{{n.depto}}</a>
                     </span>
                     <h1 class="post-title">
-                        <a href="#">
+                        <a class="res-txt" [routerLink]="['/noticias', i]">
                             {{n.title}}
                         </a>
                     </h1>

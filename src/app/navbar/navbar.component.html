@@ -6,7 +6,7 @@
   </a>
 
   <!-- Hamburguer Icon -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button id="hamb" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
@@ -30,12 +30,12 @@
 
         <!-- Open Gov dropdown Menu -->
         <div class="dropdown-menu" aria-labelledby="OpenGov">
-          <a class="text-white dropdown-item" [routerLinkActive]="['active']" routerLink="/informacionabierta">Archivos</a>
-          <a class="text-white dropdown-item" [routerLinkActive]="['active']" routerLink="/servicios">Servicios</a>
-          <a class="text-white dropdown-item" [routerLinkActive]="['active']" routerLink="/noticias">Noticias</a>
-          <a class="text-white dropdown-item" [routerLinkActive]="['active']" routerLink="/cursos">Cursos</a>
-          <a class="text-white dropdown-item" [routerLinkActive]="['active']" routerLink="/vume">VUME</a>
-          <a class="text-white dropdown-item" [routerLinkActive]="['active']" routerLink="/balastados">Balastados</a>
+          <a (click)="fixNav()" class="text-white dropdown-item" [routerLinkActive]="['active']" routerLink="/informacionabierta">Archivos</a>
+          <a (click)="fixNav()" class="text-white dropdown-item" [routerLinkActive]="['active']" routerLink="/servicios">Servicios</a>
+          <a (click)="fixNav()" class="text-white dropdown-item" [routerLinkActive]="['active']" routerLink="/noticias">Noticias</a>
+          <a (click)="fixNav()" class="text-white dropdown-item" [routerLinkActive]="['active']" routerLink="/cursos">Cursos</a>
+          <a (click)="fixNav()" class="text-white dropdown-item" [routerLinkActive]="['active']" routerLink="/vume">VUME</a>
+          <a (click)="fixNav()" class="text-white dropdown-item" [routerLinkActive]="['active']" routerLink="/balastados">Balastados</a>
         </div>
 
       </li>
@@ -52,23 +52,23 @@
 
         <!-- Projects dropdown Menu -->
         <div class="dropdown-menu" aria-labelledby="projects">
-          <a class="text-white dropdown-item" [routerLinkActive]="['active']" [routerLinkActive]="active" [routerLink]="[ 'proyectos' , { outlets: { second: 'ejecutados' } }]"><i class="mdi mdi-folder-multiple mdi-24px"></i> Ejecutados</a>
-          <a class="text-white dropdown-item" [routerLinkActive]="['active']" [routerLinkActive]="active" [routerLink]="[ 'proyectos' , { outlets: { second: 'ejecucion' } }]"><i class="mdi mdi-folder-clock mdi-24px"></i> En Ejecución</a>
-          <a class="text-white dropdown-item" [routerLinkActive]="['active']" [routerLinkActive]="active" [routerLink]="[ 'proyectos' , { outlets: { second: 'planificados' } }]"><i class="mdi mdi-folder-upload mdi-24px"></i> En Planificación</a>
+          <a (click)="fixNav()" class="text-white dropdown-item" [routerLinkActive]="['active']" [routerLinkActive]="active" [routerLink]="[ 'proyectos' , { outlets: { second: 'ejecutados' } }]"><i class="mdi mdi-folder-multiple mdi-24px"></i> Ejecutados</a>
+          <a (click)="fixNav()" class="text-white dropdown-item" [routerLinkActive]="['active']" [routerLinkActive]="active" [routerLink]="[ 'proyectos' , { outlets: { second: 'ejecucion' } }]"><i class="mdi mdi-folder-clock mdi-24px"></i> En Ejecución</a>
+          <a (click)="fixNav()" class="text-white dropdown-item" [routerLinkActive]="['active']" [routerLinkActive]="active" [routerLink]="[ 'proyectos' , { outlets: { second: 'planificados' } }]"><i class="mdi mdi-folder-upload mdi-24px"></i> En Planificación</a>
         </div>
 
       </li>
 
       <li class="nav-item">
-        <a class="text-white nav-link" [routerLinkActive]="['active']" routerLink="/tumuni"><i class="mdi mdi-office-building mdi-24px"></i> Tu Municipalidad</a>
+        <a (click)="fixNav()" class="text-white nav-link" [routerLinkActive]="['active']" routerLink="/tumuni"><i class="mdi mdi-office-building mdi-24px"></i> Tu Municipalidad</a>
       </li>
 
       <li class="nav-item">
-        <a class="text-white nav-link" [routerLinkActive]="['active']" routerLink="/consultas"><i class="mdi mdi-cards-outline mdi-24px"></i> Remisiones</a>
+        <a (click)="fixNav()" class="text-white nav-link" [routerLinkActive]="['active']" routerLink="/consultas"><i class="mdi mdi-cards-outline mdi-24px"></i> Remisiones</a>
 
       </li>
       <li class="nav-item">
-        <a class="text-white nav-link" [routerLinkActive]="['active']" routerLink="/ingreso"><i class="mdi mdi-account mdi-24px"></i> Ingreso</a>
+        <a (click)="fixNav()" class="text-white nav-link" [routerLinkActive]="['active']" routerLink="/ingreso"><i class="mdi mdi-account mdi-24px"></i> Ingreso</a>
       </li>
 
 

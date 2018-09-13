@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CursosService } from '../cursos.service';
 
 @Component({
   selector: 'app-cursos',
@@ -6,26 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cursos.component.css']
 })
 export class CursosComponent implements OnInit {
-
-
-  cursos: any = [
-    {
-      title:"Cursos de Cocina",
-      description: "",
-      src: "../assets/mock-cursos-1.jpg"
-
-    },
-    {
-      title:"Cursos de Repostería",
-      description: "",
-      src: "../assets/mock-cursos-2.jpg"
-    }
-  ]
-
-  constructor() { }
+  cursos:any;
+  constructor(private cursoService: CursosService) { }
 
   ngOnInit() {
+    this.cursos = this.getCursos();
+  }
 
+  getCursos(){
+    return this.cursoService.getInfoCursos()
   }
 
 }
