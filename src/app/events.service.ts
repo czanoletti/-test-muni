@@ -19,10 +19,10 @@ export class EventsService {
       ends: "OCT 25"
     },
     {
-      title: "Feria del Niña",
-      day: "Lunes",
+      title: "Feria del Niño",
+      day: "Martes",
       month: "OCT",
-      dayNumber:"23",
+      dayNumber:"24",
       timeBegin: "12:00PM",
       timeEnd: "5:00PM",
       place: "Cancha Polideportiva",
@@ -31,9 +31,9 @@ export class EventsService {
     },
     {
       title: "Feria del Niño",
-      day: "Lunes",
+      day: "Jueves",
       month: "OCT",
-      dayNumber:"23",
+      dayNumber:"25",
       timeBegin: "12:00PM",
       timeEnd: "5:00PM",
       place: "Cancha Polideportiva",
