@@ -23,7 +23,7 @@ export class NewsDisplayComponent implements OnInit {
       this.id = +params['id'];
       this.article = articles[this.id];
 
-      window.scrollTo(0, 0);
+    
     })
     // this.article = this.getArticle();
     // this.sub = this.route.params

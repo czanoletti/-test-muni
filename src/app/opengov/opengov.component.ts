@@ -12,7 +12,7 @@ export class OpengovComponent implements OnInit {
 
   ngOnInit() {
     this.info = this.getInfo();
-    window.scrollTo(0, 0);
+
   }
 
   getInfo(){

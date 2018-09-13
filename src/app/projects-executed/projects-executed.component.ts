@@ -14,8 +14,8 @@ export class ProjectsExecutedComponent implements OnInit {
 
   ngOnInit() {
     this.projects = this.getInfoExecuted();
-    console.log(this.projects);
-    window.scrollTo(0, 0);
+  
+
   }
 
   getInfoExecuted(){

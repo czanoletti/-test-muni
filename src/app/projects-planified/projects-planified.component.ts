@@ -13,7 +13,7 @@ export class ProjectsPlanifiedComponent implements OnInit {
   ngOnInit() {
     this.projectsPlanned = this.getInfoPlanned();
     console.log(this.projectsPlanned);
-    window.scrollTo(0, 0);
+  
   }
 
   getInfoPlanned(){

@@ -13,7 +13,7 @@ export class ProjectsExectionComponent implements OnInit {
   ngOnInit() {
 
     this.projectsExecution = this.getInfoExecution();
-    window.scrollTo(0, 0);
+    
   }
 
   getInfoExecution(){

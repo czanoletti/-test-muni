@@ -12,7 +12,7 @@ export class VumeComponent implements OnInit {
 
   ngOnInit() {
     this.jobs = this.getJobs();
-    window.scrollTo(0, 0);
+
   }
 
   getJobs(){
