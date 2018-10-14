@@ -39,6 +39,7 @@ import { EventsComponent } from './events/events.component';
 import { YoutubeComponent } from './youtube/youtube.component';
 import { GmapsComponent } from './gmaps/gmaps.component';
 import { NewsDisplayComponent } from './news-display/news-display.component';
+import { FormContainerComponent } from './form-container/form-container.component';
 
 @NgModule({
   declarations: [
@@ -67,7 +68,8 @@ import { NewsDisplayComponent } from './news-display/news-display.component';
     EventsComponent,
     YoutubeComponent,
     GmapsComponent,
-    NewsDisplayComponent
+    NewsDisplayComponent,
+    FormContainerComponent
   ],
   imports: [
     BrowserModule,

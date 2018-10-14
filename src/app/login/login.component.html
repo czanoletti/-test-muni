@@ -1,34 +1,38 @@
 
-<div *ngIf="!logged" class="animated fadeInLeft row mt-5">
-  <div class="col-sm-12">
+<!--<div *ngIf="!logged" class="animated fadeInLeft row mt-5">-->
+  <!--<div class="col-sm-12">-->
 
-    <form (ngSubmit)="checkUser(access)" #access="ngForm" class="mx-auto">
+    <!--<form (ngSubmit)="checkUser(access)" #access="ngForm" class="mx-auto">-->
 
-      <div class="form-group">
-        <label for="exampleInputEmail1">Usuario</label>
-        <input pattern="^[a-z0-9_-]{8,15}$" required ngModel type="text" #usuario="ngModel" name="usuario" (change)="log(usuario)" class="form-control" id="user" aria-describedby="user" placeholder="Ingrese usuario">
-        <div class="mt-2 alert alert-danger" *ngIf="usuario.touched && !usuario.valid">
-          <div *ngIf="usuario.errors.required">Se necesita ingresar usuario</div>
-          <div *ngIf="usuario.errors.pattern">Solo letras alfabeticas permitidas </div>
-        </div>
-      </div>
-
-
-      <div class="form-group">
-        <label for="exampleInputPassword1">Contraseña</label>
-        <input required ngModel #password="ngModel" name="password" type="password" class="form-control" id="password" placeholder="Ingrese contraseña">
-      </div>
+      <!--<div class="form-group">-->
+        <!--<label for="exampleInputEmail1">Usuario</label>-->
+        <!--<input pattern="^[a-z0-9_-]{8,15}$" required ngModel type="text" #usuario="ngModel" name="usuario" (change)="log(usuario)" class="form-control" id="user" aria-describedby="user" placeholder="Ingrese usuario">-->
+        <!--<div class="mt-2 alert alert-danger" *ngIf="usuario.touched && !usuario.valid">-->
+          <!--<div *ngIf="usuario.errors.required">Se necesita ingresar usuario</div>-->
+          <!--<div *ngIf="usuario.errors.pattern">Solo letras alfabeticas permitidas </div>-->
+        <!--</div>-->
+      <!--</div>-->
 
 
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        Recordar contraseña
-      </div>
-      <button type="submit" class="mt-5 btn btn-primary">Entrar</button>
-    </form>
+      <!--<div class="form-group">-->
+        <!--<label for="exampleInputPassword1">Contraseña</label>-->
+        <!--<input required ngModel #password="ngModel" name="password" type="password" class="form-control" id="password" placeholder="Ingrese contraseña">-->
+      <!--</div>-->
 
-  </div>
-</div>
+
+      <!--<div class="form-check">-->
+        <!--<input type="checkbox" class="form-check-input" id="exampleCheck1">-->
+        <!--Recordar contraseña-->
+      <!--</div>-->
+      <!--<button type="submit" class="mt-5 btn btn-primary">Entrar</button>-->
+    <!--</form>-->
+
+  <!--</div>-->
+<!--</div>-->
+
+
+
+<app-form-container></app-form-container>
 
 <div *ngIf="logged" class="row mt-5">
   log

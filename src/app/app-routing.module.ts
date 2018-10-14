@@ -37,6 +37,15 @@ const routes: Routes = [
 
   },
   {
+    path:'proyectos', component: ProjectsComponent,
+    children: [
+      {path:'ejecutados', component: ProjectsExecutedComponent, outlet:"second"},
+      {path:'ejecucion', component: ProjectsExectionComponent, outlet:"second"},
+      {path:'planificados', component: ProjectsPlanifiedComponent, outlet:"second"}
+    ]
+
+  },
+  {
     path:'consultas', component: TicketConsultationComponent
   },
   {
@@ -69,7 +78,7 @@ const routes: Routes = [
   {
     path:'**', component:ErrorComponent
   }
-]
+];
 
 
 @NgModule({
